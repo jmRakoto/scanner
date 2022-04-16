@@ -20,16 +20,7 @@ class SplashPage extends StatelessWidget {
             return Container(
               color: ThemeColors.main,
               child: Center(
-                child: Stack(
-                  children: [
-                    Image.asset('assets/logo.png'),
-                    Positioned(
-                      left: 170,
-                      top: 170,
-                      child: CircularProgressIndicator(),
-                    )
-                  ],
-                ),
+                child: Image.asset('assets/logo.png'),
               ),
             );
           },
