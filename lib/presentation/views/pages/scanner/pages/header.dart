@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:qr_scanner/core/constants/colors.dart';
 import 'package:qr_scanner/core/utils/size_utils.dart';
-import 'package:qr_scanner/presentation/bloc/bloc/default_bloc.dart';
+import 'package:qr_scanner/presentation/bloc/default/default_bloc.dart';
 import 'package:qr_scanner/presentation/themes/app_theme.dart';
 
 class Header extends StatelessWidget {

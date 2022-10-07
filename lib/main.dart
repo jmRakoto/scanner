@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:qr_scanner/presentation/bloc/bloc/default_bloc.dart';
+import 'package:qr_scanner/presentation/bloc/default/default_bloc.dart';
+import 'package:qr_scanner/presentation/bloc/scanner/scanner_bloc.dart';
 import 'package:qr_scanner/presentation/routes/route.dart';
 import 'package:qr_scanner/presentation/themes/app_theme.dart';
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider<DefaultBloc>(
             create: (context) => DefaultBloc()..add(Splash())),
+        BlocProvider<ScannerBloc>(create: (context) => ScannerBloc())
       ],
       child: BlocBuilder<DefaultBloc, DefaultState>(
         builder: (context, state) {

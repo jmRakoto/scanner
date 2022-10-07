@@ -1,8 +1,5 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:flutter/material.dart';
-import 'package:qr_scanner/core/utils/navigation.dart';
-import 'package:qr_scanner/presentation/routes/route.dart';
 import 'package:qr_scanner/presentation/themes/app_theme.dart';
 
 part 'default_event.dart';
