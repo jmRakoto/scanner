@@ -1,11 +1,7 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
-import 'package:qr_scanner/core/services/service.dart';
-import 'package:qr_scanner/core/utils/platform.dart';
 import 'package:qr_scanner/core/utils/size_utils.dart';
-import 'package:qr_scanner/presentation/bloc/default/default_bloc.dart';
 import 'package:qr_scanner/presentation/bloc/scanner/scanner_bloc.dart';
 import 'package:qr_scanner/presentation/views/pages/scanner/pages/button_control.dart';
 import 'package:qr_scanner/presentation/views/pages/scanner/pages/result.dart';
