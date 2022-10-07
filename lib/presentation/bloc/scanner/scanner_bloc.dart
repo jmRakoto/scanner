@@ -24,19 +24,15 @@ class ScannerBloc extends Bloc<ScannerEvent, ScannerState> {
       QrViewCreated event, Emitter<ScannerState> emit) async {
     this.controller = event.controller;
     event.controller.scannedDataStream.listen((Barcode scanData) {
-      print('oo == $scanData');
       // setState(() {
       //   result = scanData;
       // });
       emit(state.copyWith(result: scanData));
     }).onError((handleError) {
-      print('oo == ${handleError.toString()}');
-
       // setState(() {
       //   defaultVal = handleError.toString();
       // });
     });
-    print('ato zan');
   }
 
   Future<void> _onChangeCamera(
@@ -50,17 +46,6 @@ class ScannerBloc extends Bloc<ScannerEvent, ScannerState> {
     await controller!.toggleFlash();
     emit(state.copyWith(isFlashOn: !this.state.isFlashOn));
   }
-
-  // @override
-  // Future<void> reassemble() async {
-  //   // controller?.dispose();
-  //   super.noSuchMethod(reassemble());
-  //   if (PlatformType.android()) {
-  //     controller!.pauseCamera();
-  //   } else if (PlatformType.ios()) {
-  //     controller!.resumeCamera();
-  //   }
-  // }
 
   @override
   Future<void> close() async {
