@@ -1,3 +1,5 @@
+# Author: JM Rakoto
+
 # QR Code Scanner app
 
 | Splash                              | Light                             | Dark                            |
